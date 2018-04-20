@@ -10,7 +10,7 @@ This repo shows a Angular 5.0.0 + Node.js app that demos the IBM Cloud DDE servi
 
  In order to deploy to IBM Cloud, you'll need an [IBM Cloud account](https://console.stage1.ng.bluemix.net/registration/). Once registered, you can automatically deploy the app using the following deploy to IBM Cloud button.
 
- [![Deploy to IBM Cloud](https://github.com/IBM/container-journey-template/blob/master/images/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.ibm.com/GearBox/Dynamic-dashboard-demo&repository_token=a623cbb1534c9f30fb0199bc9ac57e8d3f91afa6&branch=master)
+ [![Deploy to IBM Cloud](https://github.com/IBM/container-journey-template/blob/master/images/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/dynamic-dashboard-demo&branch=deploy-ibmcloud)
 
  To run locally and deploy from the command line, follow the instructions below.
 
