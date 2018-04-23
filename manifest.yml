@@ -1,6 +1,6 @@
 ---
 declared-services:
-  dde-demo-dde-service:
+  sample-dde-demo-dde-service:
     label:  dynamic-dashboard-embedded
     plan: lite
 applications:
@@ -8,4 +8,4 @@ applications:
     random-route: true
     memory: 256M
     services:
-  - dde-demo-dde-service
+    - sample-dde-demo-dde-service
