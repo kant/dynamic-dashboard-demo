@@ -12,9 +12,6 @@ stages:
     build_type: npm
     script: |-
       #!/bin/bash
-      npm install
-      npm run build
-      #!/bin/bash
       # Set up required version of Node and NPM
       export NVM_DIR=/home/pipeline/nvm
       export NODE_VERSION=7.0.0
@@ -30,7 +27,7 @@ stages:
         && npm -v
 
       # Install & Build
-      npm install @angular/cli 
+      npm install @angular/cli
       npm install
       npm run dist-prod
 - name: Deploy
@@ -51,7 +48,7 @@ stages:
     script: |
       #!/bin/bash
       cf create-service dynamic-dashboard-embedded lite sample-dde-demo-dde-service
-      cf set-env "${CF_APP}" APP_BASE_URL https://"${CF_APP}".mybluemix.net/ 
+      cf set-env "${CF_APP}" APP_BASE_URL https://"${CF_APP}".mybluemix.net/
       cf push "${CF_APP}"
       # view logs
       #cf logs "${CF_APP}" --recent
