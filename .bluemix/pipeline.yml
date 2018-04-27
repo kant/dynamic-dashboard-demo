@@ -48,9 +48,8 @@ stages:
     script: |
       #!/bin/bash
       cf create-service dynamic-dashboard-embedded lite sample-dde-demo-dde-service
-      cf push "${CF_APP}" --no-start
+      cf push "${CF_APP}"
       cf set-env "${CF_APP}" APP_BASE_URL https://"${CF_APP}".mybluemix.net/
       cf restage ${CF_APP}
-      cf start ${CF_APP}
       # view logs
       #cf logs "${CF_APP}" --recent
